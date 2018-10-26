@@ -8,6 +8,6 @@ The client of application wrote on JavaScript. Back-end - on Node.js
 ## Installation
 
 1. Git clone
-2 npm install express \ npm install http \ npm install body-parser
+2. npm install express \ npm install http \ npm install body-parser
 3. node server.js
 4. Go to localhost:4000/
