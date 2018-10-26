@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Yurii talks</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link  rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">        
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="legend row d-flex justify-content-center">
+                <div class="legend__title col-lg-7 text-center my-4">
+                    Welcome to Yurii Research Agensy</div>
+                <p class="legend__text col-lg-7">These guys
+                     know what they are doing, even when they merge changes to master without pull requst.</p>
+                <p class="legend__text col-lg-7">They are
+                     brave and not afraid to climb beyond the syntax, because the boundaries exist only in your head.</p>
+                <p class="legend__text col-lg-7">Their credo
+                     - "This is not a bug - it's an undocumented feature." </p>
+                <p class="legend__text col-lg-7">You have an
+                    exclusive opportunity to watch the success
+                    of a young team of developers in real time.
+                    Below is an indicator of the speed of the
+                    appearance of new bugs in their code. </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xs-6">
+                    <div class="speedbox">
+                        <div class="speedbox__score" id="speedbox-score"></div>
+                        <div class="speedbox__groove"></div>
+                        <div class="speedbox__odo">
+                            <div class="speedbox__up"><i class="fa fa-arrow-circle-up"></i><span id='bugs_value'>0</span><span> new bugs</span></div>
+                            <div class="speedbox__down"><i class="fa fa-arrow-circle-down"></i><span id='bugs_speed'>0</span> <span>bug/s</span></div>
+                        </div>
+                        <div class="speedbox__base"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+    
+</html>

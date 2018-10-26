@@ -1,0 +1,110 @@
+:root {
+    --main-bg-color: #00A591; 
+    --spedometer-color:#215588;
+}
+
+body {
+    padding: 1em;
+    background-color: var(--main-bg-color);
+    font-size: 1.1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.legend {
+    color: #000;
+    
+}
+.speedbox {
+    margin: 50px ;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    position: relative;
+    font-family: 'Oswald';
+}
+.speedbox__groove {
+    height: 100px;
+    width: 200px;
+    background: transparent;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 20px solid #eee;
+    border-bottom: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.speedbox__score {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(0deg);
+    height: 200px;
+    width: 200px;
+    background: transparent;
+    border-radius: 50%;
+    border: 20px solid  var(--spedometer-color);
+    border-color: transparent transparent var(--spedometer-color) var(--spedometer-color);
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+.speedbox__base {
+    width: 240px;
+    height: 100px;
+    background: var(--main-bg-color);
+    position: relative;
+    top: 100px;
+    z-index: 20;
+}
+.speedbox__base:before {
+    content: '';
+    width: 240px;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
+}
+.speedbox__odo {
+    font-size: bold;    
+    text-align: center;
+    position: absolute;
+    color: #000;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.speedbox__odo i {
+    font-size: 18px;
+    opacity: 0.6;
+}
+.speedbox__odo > div {
+    margin-bottom: 0;
+}
+.speedbox__odo span {
+    font-size: 0.7em;
+}
+.speedbox__up {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.speedbox__down {
+    font-size: 30px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    line-height: 1.2em;
+} 
+
+.legend__title{
+    font-size: 2.1rem;
+}
